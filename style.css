@@ -1,0 +1,49 @@
+.title {
+	font-size: 20px;
+	padding-left: 400px;
+	margin-top: 10px;
+	font-family: American Typewriter;
+}
+
+h1 {
+	padding-left: 400px;
+	margin-top: 150px;
+	font-family: American Typewriter;
+}
+
+.everything {
+	padding-left: 440px;
+	font-family: American Typewriter;
+	text-decoration: none;
+}
+
+body {
+	background-color: #C76D6D;
+}
+
+.circle {
+	height: 550px;
+	width: 550px;
+	border-radius: 50%;
+	position: absolute;
+	z-index: -1;
+	background-color: #F2CFCF;
+	margin-left: 290px;
+	top: 60px;
+	animation: 4s infinite;
+	animation-name: FLOAT;
+	animation-direction: alternate-reverse;
+	-webkit-animation: 4s infinite;
+	-webkit-animation-name: FLOAT;
+	-webkit-animation-direction: alternate-reverse;
+}
+
+@keyframes FLOAT {
+	from {margin-top: 0px}
+	to {margin-top: 20px}
+}
+
+@-webkit-keyframes FLOAT {
+	from {margin-top: 0px}
+	to {margin-top: 20px}	
+}
