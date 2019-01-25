@@ -1,0 +1,26 @@
+.desktop {
+	border-radius: 10px;
+	max-width: 100%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+h1 {
+	text-align: center;
+	color: darkgrey;
+	font-family: Gill Sans;
+	font-style: bold;
+}
+
+h2 {
+	z-index: 0;
+	position: fixed;
+	text-align: left;
+	color: darkgrey;
+	font-family: Gill Sans;
+	font-style: bold;
+	top: 15px;
+	left: 20px;
+}
