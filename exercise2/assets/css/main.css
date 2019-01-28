@@ -1,0 +1,103 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+}
+
+.canvas {
+	width: 100vw;
+	height: 100vh;
+	margin: 0px auto;
+	background: grey;
+	position: relative;
+}
+
+.shade {
+background: pink;
+position: relative;
+width: 200px;
+height: 140px; 
+top: 200px;
+left: 150px;
+transition: all .2s ease-in-out;
+-webkit-transition: all .2s ease-in-out;
+}
+
+.shade:hover {
+	animation: flicker .2s infinite;
+	-webkit-animation: flicker .2s infinite;
+}
+
+@keyframes flicker {
+	0% {background: lightpink}
+	50% {background: pink}
+	100% {background: lightpink}
+}
+
+@-webkit-keyframes flicker {
+	0% {background: lightpink}
+	50% {background: pink}
+	100% {background: lightpink}
+}
+
+.light {
+position: relative;
+height: 0;
+width: 300px;
+border-bottom: 400px solid lightyellow;
+border-left: 50px solid transparent;
+border-right: 50px solid transparent;
+top: 200px;
+margin-left: 100px;
+opacity: 0;
+transition: all .5s ease-in-out;
+-webkit-transition: all .5s ease-in-out;
+}
+
+.poll {
+position: relative;
+width: 30px;
+height: 350px;
+background-color: darkgrey;
+top: -200px;
+left: 235px;
+z-index: 0;
+}
+
+.light:hover {
+	opacity: 0.5;
+	transition-delay: .5s;
+	-webkit-transition-delay: .5s;
+}
+
+.bottom {
+	background: darkgrey;
+	position: relative;
+	height: 60px;
+	width: 200px;
+	border-radius: 60%;
+	left: 150px;
+	top: -230px;
+}
+
+.switch {
+	position: relative;
+	width: 5px;
+	height: 40px;
+	background: darkgrey;
+	top: -610px;
+	left: 333px;
+}
+
+h2 {
+	z-index: 0;
+	position: fixed;
+	text-align: left;
+	color: darkgrey;
+	font-family: Gill Sans;
+	font-style: bold;
+	top: 15px;
+	left: 20px;
+}
