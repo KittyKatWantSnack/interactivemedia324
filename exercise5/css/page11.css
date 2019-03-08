@@ -1,0 +1,42 @@
+a {
+	text-decoration: none;
+	font-family: Marker Felt, fantasy;
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	top: 300px;
+	position: relative;
+	display: inline-block;
+	margin-left: 40%;
+}
+
+body {
+	background-color: black;
+}
+
+.UmU {
+	display: block;
+  	position: relative;
+  	margin-left: auto;
+  	margin-right: auto;
+  	top: 400px;
+  	opacity: 1;
+  	animation-name: flash;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: flash;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@-webkit-keyframes flash {
+	0% {opacity: 1;}
+	50% {opacity: 0;}
+	100% {opacity: 1;}
+}

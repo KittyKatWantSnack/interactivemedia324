@@ -1,0 +1,54 @@
+body {
+	background-color: #9AA8C7;
+}
+
+a {
+	text-decoration: none;
+	font-family: Marker Felt, fantasy;
+	color: white;
+	font-size: 50px;
+	text-align: center;
+	top: 300px;
+	position: relative;
+	display: inline-block;
+	margin-left: 45%;
+}
+
+a:hover {
+	animation-name: large;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: large;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes large {
+	0% {color: white;}
+	25% {color:gray;}
+	50% {color: lightgrey;}
+	75% {color: gray;}
+	100% {color: white;}
+}
+
+@-webkit-keyframes large {
+	0% {color: white;}
+	25% {color:gray;}
+	50% {color: lightgrey;}
+	75% {color: gray;}
+	100% {color: white;}
+}
+
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+
+.question {
+	cursor: progress;
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 400px;
+}

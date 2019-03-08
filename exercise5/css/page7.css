@@ -1,0 +1,39 @@
+a {
+	text-decoration: none;
+	font-family: Marker Felt, fantasy;
+	color: black;
+	font-size: 60px;
+	text-align: center;
+	top: 300px;
+	position: relative;
+	display: inline-block;
+	margin-left: 35%;
+}
+
+.jump {
+	display: block;
+  	position: relative;
+  	margin-left: auto;
+  	margin-right: auto;
+  	top: 400px;
+  	animation: 3s infinite;
+	animation-name: FLOAT;
+	animation-direction: alternate-reverse;
+	-webkit-animation: 3s infinite;
+	-webkit-animation-name: FLOAT;
+	-webkit-animation-direction: alternate-reverse;
+}
+
+body {
+	background-color: #9F0000;
+}
+
+@keyframes FLOAT {
+	from {margin-top: 0px}
+	to {margin-top: 70px}
+}
+
+@-webkit-keyframes FLOAT {
+	from {margin-top: 0px}
+	to {margin-top: 70px}	
+}

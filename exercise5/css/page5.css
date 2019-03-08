@@ -1,0 +1,73 @@
+a {
+	text-decoration: none;
+	font-family: Marker Felt, fantasy;
+	color: red;
+	font-size: 90px;
+	text-align: center;
+	top: 300px;
+	position: absolute;
+	display: inline-block;
+	margin-left: 32%;
+}
+
+.one {
+animation-name: blin;
+animation-duration: .5s;
+animation-iteration-count: infinite;
+-webkit-animation-name: blin;
+-webkit-animation-duration: .5s;
+-webkit-animation-iteration-count: infinite;
+opacity: 0;
+position: relative;
+display: inline-block;
+}
+
+.two {
+animation-name: blin;
+animation-duration: .5s;
+animation-iteration-count: infinite;
+animation-delay: .1s;
+-webkit-animation-name: blin;
+-webkit-animation-duration: .5s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-delay: .1s;
+opacity: 0;
+position: relative;
+display: inline-block;
+}
+
+.three {
+animation-name: blin;
+animation-duration: .5s;
+animation-iteration-count: infinite;
+animation-delay: .2s;
+-webkit-animation-name: blin;
+-webkit-animation-duration: .5s;
+-webkit-animation-iteration-count: infinite;
+-webkit-animation-delay: .2s;
+opacity: 0;
+position: relative;
+display: inline-block;
+}
+
+@keyframes blin {
+	0% {opacity: .0;}
+	100% {opacity: 1;}
+}
+
+@-webkit-keyframes blin {
+	0% {opacity: .0;}
+	100% {opacity: 1;}
+}
+
+body {
+	background-color: black;
+}
+
+.stab {
+	display: block;
+  	position: relative;
+  	margin-left: auto;
+  	margin-right: auto;
+  	top: 400px;
+}

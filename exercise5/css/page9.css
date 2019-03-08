@@ -1,0 +1,48 @@
+a {
+	text-decoration: none;
+	font-family: Marker Felt, fantasy;
+	color: white;
+	font-size: 90px;
+	text-align: center;
+	top: 300px;
+	position: relative;
+	display: inline-block;
+	margin-left: 30%;
+}
+
+body {
+	background-color: #555CB7;
+}
+
+.uhoh {
+	display: block;
+  	position: relative;
+  	margin-left: auto;
+  	margin-right: auto;
+  	top: 400px;
+}
+
+a:hover {
+	animation-name: dun;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	-webkit-animation-name: dun;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes dun {
+	0% {color: white;}
+	25% {color:gray;}
+	50% {color: lightgrey;}
+	75% {color: gray;}
+	100% {color: white;}
+}
+
+@-webkit-keyframes dun {
+	0% {color: white;}
+	25% {color:gray;}
+	50% {color: lightgrey;}
+	75% {color: gray;}
+	100% {color: white;}
+}

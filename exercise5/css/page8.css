@@ -1,0 +1,53 @@
+a {
+	text-decoration: none;
+	font-family: Marker Felt, fantasy;
+	color: black;
+	font-size: 90px;
+	text-align: center;
+	top: 300px;
+	position: relative;
+	display: inline-block;
+	margin-left: 15%;
+	animation: .4s shake infinite;
+}
+
+@keyframes shake {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }  
+}
+
+@-webkit-keyframes shake {
+  0% { transform: skewX(-15deg); }
+  5% { transform: skewX(15deg); }
+  10% { transform: skewX(-15deg); }
+  15% { transform: skewX(15deg); }
+  20% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); }  
+}
+
+body {
+	background-color: pink;
+	animation: .4s big infinite;
+}
+
+@keyframes big {
+	0% {background-color: #33215D;}
+	100% {background-color: #4505D8v;}
+}
+
+@-webkit-keyframes big {
+	0% {background-color: #33215D;}
+	100% {background-color: #4505D8;}
+}
+
+.musicbob {
+	display: block;
+  	position: relative;
+  	margin-left: auto;
+  	margin-right: auto;
+  	top: 400px;
+}
